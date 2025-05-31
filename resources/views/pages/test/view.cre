@@ -1,0 +1,11 @@
+from main import Creator  
+
+test = Creator.view.get('test')   
+ 
+Creator.terminal.label(f"id : {test["id"]}")
+Creator.terminal.label(f"name : {test["name"]}")
+Creator.terminal.label(f"details : {test["details"]}")
+Creator.terminal.label(f"etat : {test["etat"]}")
+Creator.terminal.label(f"created_at : {test["created_at"]}")
+Creator.terminal.label(f"updated_at : {test["updated_at"]}")
+Creator.terminal.input(Creator.lang.get("confirm.continue"), type="confirm", value="yes", reject_action=Creator.view.back) 

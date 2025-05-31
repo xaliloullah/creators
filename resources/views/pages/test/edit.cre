@@ -1,0 +1,9 @@
+from main import Creator   
+
+test = Creator.view.get('test')    
+   
+name = Creator.terminal.input(placehoder = 'name', value=test["name"])
+details = Creator.terminal.input(placehoder ='details', type ="textarea", value=test["details"]) 
+etat = Creator.terminal.input(placehoder ='etat', type="number", value = test["etat"]) 
+
+Creator.route("tests.update", id=test['id'], data={'name':name, 'details':details, 'etat':etat})

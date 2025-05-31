@@ -1,0 +1,11 @@
+from main import Creator 
+
+
+if Creator.request.session.has_errors():
+    for error in Creator.request.session.get_errors(): 
+        Creator.terminal.error(error)
+if Creator.request.session.has_success():
+    for msg in Creator.request.session.get_success(): 
+        Creator.terminal.success(msg) 
+        
+        

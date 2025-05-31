@@ -1,0 +1,27 @@
+{
+  "name": "creator",
+  "version": "0.1.55-beta",
+  "author": "Ibrahima Khaliloullah Thiam",
+  "description": "Creator is a versatile Python framework designed to streamline the development process by providing a comprehensive set of tools and libraries. It supports various databases including MySQL, PostgreSQL, and MongoDB, and offers functionalities for encryption, argument parsing, keyboard interactions, markdown processing, YAML parsing, PDF manipulation, and image processing. The framework is built to be compatible with Python 3.12.4 and includes a wide range of packages to facilitate rapid application development.",
+  "python": "3.13.1",
+  "langs": [
+    "en"
+  ],
+  "packages": {
+    "mysql-connector-python": "9.0.0",
+    "psycopg2": "2.9.10",
+    "pymongo": "4.10.1",
+    "cryptography": "44.0.0",
+    "bcrypt": "4.2.1",
+    "argparse": "1.4.0",
+    "keyboard": "0.13.5",
+    "markdown": "3.7",
+    "pyyaml": "6.0.2",
+    "PyPDF2": "3.0.1",
+    "pillow": "11.1.0",
+    "deep-translator": "1.11.4"
+  },
+  "created_at": "2024-09-22 00:00:00.000000",
+  "updated_at": "2025-03-02 23:22:33.905476",
+  "key": "$2b$12$hxdTfdcIPOCP3x3YxhZ3JOEIC4rD38dD1XMbd/mskWHivqzmdiWru"
+}

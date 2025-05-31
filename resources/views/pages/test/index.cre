@@ -1,0 +1,32 @@
+from main import Creator 
+
+tests = Creator.view.get('tests') 
+  
+Creator.terminal.echo(Creator.terminal.table(tests, keys=['id','name','etat','details'])) 
+
+option = Creator.terminal.input('option', options={"1":"Ajouter", "2":"Modifier", "3":"Details", "4":"Supprimer", "0":" Retour"})
+
+if option == "1":
+    Creator.route("tests.create")
+elif option == "2":
+    id = Creator.terminal.input('ID : ')
+    Creator.route("tests.edit", id=id)
+    
+    
+elif option == "3":
+    id = Creator.terminal.input('ID : ')
+    Creator.route("tests.show", id=id)
+    
+elif option == "4":
+    id = input('ID')
+    if Creator.terminal.input(Creator.lang.get("confirm.delete"), type="confirm", value="yes", reject_action=Creator.view.back):
+        Creator.route("tests.destroy", id=id)
+    
+elif option == "0":
+    # Creator.view.back() 
+    Creator.route("main") 
+
+    # redirect() 
+    # Creator.view.back() 
+    
+    

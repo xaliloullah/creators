@@ -1,0 +1,7 @@
+from main import Creator
+ 
+name = Creator.terminal.input(type="", placehoder = 'name')
+details = Creator.terminal.input(placehoder ='details', type = "textarea") 
+etat = Creator.terminal.input(placehoder ='etat', type="number") 
+
+Creator.route("tests.store", data={'name':name, 'details':details, 'etat':etat})

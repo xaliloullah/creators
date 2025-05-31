@@ -1,0 +1,4 @@
+# coding python 
+from utils.creator.src.command.command import Command
+ 
+Command.start()

@@ -1,0 +1,444 @@
+/* --- 
+  --blue: #4e73df;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #e74a3b;
+  --orange: #fd7e14;
+  --yellow: #f6c23e;
+  --green: #1cc88a;
+  --teal: #20c9a6;
+  --cyan: #36b9cc;
+  --white: #fff;
+  --black: #000;
+  --gray: #858796;
+  --gray-dark: #5a5c69;
+  --primary: #4e73df;
+  --secondary: #858796;
+  --success: #1cc88a;
+  --info: #36b9cc;
+  --warning: #f6c23e;
+  --danger: #ef4444;
+  --light: #f8f9fc;
+  --dark: #4a4b51;
+--- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+QWidget {
+  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #212529;
+} 
+.body {
+  background-color: #002752;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-primary {
+  background-color: #4e73df;
+}
+.bg-success {
+  background-color: #1cc88a;
+}
+.bg-danger {
+  background-color: #ef4444;
+}
+.bg-warning {
+  background-color: #ffc107;
+}
+.bg-info {
+  background-color: #17a2b8;
+}
+.bg-secondary {
+  background-color: #858796;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.bg-dark {
+  background-color: #343a40;
+}
+
+/* --- Text  --- */
+.text-transparent {
+  color: transparent;
+}
+.text-primary {
+  color: #4e73df;
+}
+.text-success {
+  color: #1cc88a;
+}
+.text-danger {
+  color: #ef4444;
+}
+.text-warning {
+  color: #ffc107;
+}
+.text-info {
+  color: #17a2b8;
+}
+.text-secondary {
+  color: #858796;
+}
+
+.text-light {
+  color: #f8f9fa;
+}
+
+.text-dark {
+  color: #343a40;
+}
+.text-center {
+  text-align: center;
+}
+.text-start {
+  text-align: start;
+}
+.text-end {
+  text-align: end;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+/* --- Cards --- */
+.card { 
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: transparent;
+}
+.card-details {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+.card-footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+
+/* --- Boutons --- */
+.btn {
+  padding: 15px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+.btn-rounded {
+  border-radius: 10px;
+}
+/* Primary Buttons */
+.btn-primary {
+  background-color: #4e73df;
+}
+.btn-outline-primary {
+  background-color: transparent;
+  color: #4e73df;
+  border: 1px solid #4e73df;
+}
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: #1e3578;
+  color: #ffffff;
+}
+
+/* Success Buttons */
+.btn-success {
+  background-color: #1cc88a;
+}
+.btn-outline-success {
+  background-color: transparent;
+  color: #1cc88a;
+  border: 1px solid #1cc88a;
+}
+.btn-success:hover,
+.btn-outline-success:hover {
+  background-color: #138b5f;
+  color: #ffffff;
+}
+
+/* Danger Buttons */
+.btn-danger {
+  background-color: #ef4444;
+}
+.btn-outline-danger {
+  background-color: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+.btn-danger:hover,
+.btn-outline-danger:hover {
+  background-color: #822525;
+  color: #ffffff;
+}
+
+/* Warning Buttons */
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+.btn-outline-warning {
+  background-color: transparent;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+.btn-warning:hover,
+.btn-outline-warning:hover {
+  background-color: #e0a800;
+  color: #ffffff;
+}
+
+/* Info Buttons */
+.btn-info {
+  background-color: #17a2b8;
+}
+.btn-outline-info {
+  background-color: transparent;
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+}
+.btn-info:hover,
+.btn-outline-info:hover {
+  background-color: #117a8b;
+  color: #ffffff;
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+  background-color: #858796;
+}
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #858796;
+  border: 1px solid #858796;
+}
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  background-color: #3c3c43;
+  color: #ffffff;
+}
+
+/* Light Buttons */
+.btn-light {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+.btn-outline-light {
+  background-color: transparent;
+  color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+}
+.btn-light:hover,
+.btn-outline-light:hover {
+  background-color: #e2e6ea;
+  color: #212529;
+}
+
+/* Dark Buttons */
+.btn-dark {
+  background-color: #343a40;
+}
+.btn-outline-dark {
+  background-color: transparent;
+  color: #343a40;
+  border: 1px solid #343a40;
+}
+.btn-dark:hover,
+.btn-outline-dark:hover {
+  background-color: #1d2124;
+  color: #ffffff;
+}
+
+/* --- Utilitaires d'espacement --- */
+
+.sm {
+  height: 10px;
+}
+.lg {
+  height: 30;
+}
+.xl {
+  height: 50px;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.mb-3 {
+  margin-bottom: 15px;
+}
+
+.p-3 {
+  padding: 15px;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: bold;
+  background-color: transparent;
+}
+.h1 {
+  font-size: 40px;
+}
+
+.h2 {
+  font-size: 32px;
+}
+
+.h3 {
+  font-size: 28px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 20px;
+}
+
+.h6 {
+  font-size: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+.label {
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.input {
+  min-width: 200;
+  padding: 5 10;
+  font-size: 16px;
+  color: #4a4b51;
+  background-color: #f8f9fa;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
+}
+
+.input:focus {
+  border-color: #93a8e5;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #adb5bd;
+  font-style: italic;
+}
+
+.input:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+.input:hover {
+  border-color: #4e73df;
+}
+
+.dropdown {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #f8f9fa;
+  color: #212529;
+  font-size: 16px;
+  width: 200;
+}
+
+.dropdown:hover {
+  border-color: #4e73df;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #cccccc;
+  color: #ffffff;
+  width: 250px;
+  text-align: center;
+  font-weight: bold;
+}
+.progress-bar-sm {
+  height: 10px;
+  border-radius: 5px;
+}
+.progress-bar-lg {
+  height: 20px;
+}
+.progress-bar-xl {
+  height: 30px;
+  border-radius: 10px;
+}
+.progress-bar:hover {
+  background-color: #dbdbdb;
+  border-radius: 10;
+}
+.progress-bar::chunk {
+  border-radius: 8px;
+}
+
+.progress-bar-primary::chunk {
+  background-color: #4e73df;
+}
+.progress-bar-secondary::chunk {
+  background-color: #858796;
+}
+.progress-bar-success::chunk {
+  background-color: #1cc88a;
+}
+.progress-bar-info::chunk {
+  background-color: #36b9cc;
+}
+.progress-bar-warning::chunk {
+  background-color: #f6c23e;
+}
+.progress-bar-danger::chunk {
+  background-color: #ef4444;
+}
+.progress-bar-light::chunk {
+  background-color: #f8f9fc;
+}
+.progress-bar-dark::chunk {
+  background-color: #4a4b51;
+}

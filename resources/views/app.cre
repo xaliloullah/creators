@@ -1,0 +1,11 @@
+from main import Creator
+
+Creator.terminal.clear()  
+
+Creator.view.include('includes.header') 
+
+Creator.view.include('components.alert') 
+ 
+Creator.view.generate("content") 
+
+Creator.view.include('includes.footer') 

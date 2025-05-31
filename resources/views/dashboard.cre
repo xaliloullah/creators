@@ -1,0 +1,12 @@
+from main import Creator
+
+Creator.terminal.subtitle(Creator.lang.get("dashboard"))
+
+option = Creator.terminal.input("option", options={"1":"Test", "0":Creator.lang.get("actions.logout")})
+if option == "1": 
+    Creator.route("tests.index")
+elif option == "0":
+    Creator.terminal.clear()
+    if Creator.terminal.input(Creator.lang.get("confirm.logout", default="logout ?"), type="confirm", value="yes"):
+        Creator.terminal.comment(Creator.lang.get("messages.goodbye"))
+        exit() 

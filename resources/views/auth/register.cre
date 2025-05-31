@@ -1,0 +1,9 @@
+from main import Creator   
+
+Creator.terminal.input(Creator.lang.get("confirm.continue"), type="confirm", value="yes", reject_action=Creator.view.back)
+
+name = Creator.terminal.input(type="text", placehoder ='name')
+email = Creator.terminal.input(placehoder ='email', type = "email") 
+password = Creator.terminal.input(placehoder ='password', type="password") 
+
+Creator.route("register.store", data={'name':name, 'email':email, 'password':password})

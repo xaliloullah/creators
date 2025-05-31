@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.cre": "python",
+    "creator": "python"
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": false
+}

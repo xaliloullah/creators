@@ -1,0 +1,5 @@
+from main import Creator
+
+if Creator.debug == True:
+    help(Creator)
+    print(dir(Creator))
