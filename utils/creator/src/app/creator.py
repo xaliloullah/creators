@@ -3,8 +3,7 @@ from utils.creator.src.core import Path, File, Task, Date, View, Lang, Hash, Cry
 #
 # , Interface
  
-from utils.creator.src.app.configs import Settings
-from utils.creator.src.app.configs import Version
+from utils.creator.src.app.configs import Settings,Version 
 
 from utils.creator.src.requests.sessions import Session
 

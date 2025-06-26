@@ -22,7 +22,6 @@ class Date:
     def current_datetime():
         return Date.now().strftime("%Y-%m-%d %H:%M:%S")
     
- 
     
     @staticmethod
     def strtotime(date , format="%Y-%m-%d %H:%M:%S.%f"):
@@ -30,7 +29,7 @@ class Date:
     
     @staticmethod
     def format_date(date, format="%Y-%m-%d"):
-        return date.strftime(format)
+        return datetime.datetime.strptime(date,  format)
     
     @staticmethod
     def string_to_date(date_str, format="%Y-%m-%d"):
@@ -119,4 +118,4 @@ class Date:
     
     @staticmethod
     def time():
-        return Date.datetime
+        return datetime.time
