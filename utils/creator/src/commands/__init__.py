@@ -22,7 +22,7 @@ class Command(argparse.ArgumentParser):
         raise NotImplementedError("Each command must implement 'handle'.")
     
     @classmethod
-    def run(cls):
+    def run(cls):  
         parser = cls(prog=f"{Creator.terminal.style(f"{Creator.name} v{Creator.version} :", Creator.terminal.cyan, Creator.terminal.bold)}", description=f"{Creator.terminal.style(f"CLI tool for managing creator.", Creator.terminal.cyan, Creator.terminal.bold)}")
         subparsers = parser.add_subparsers(dest='command', help="Available Commands")
 

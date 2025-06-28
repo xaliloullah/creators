@@ -1,4 +1,4 @@
-from utils.creator.src.build import assets, controllers, env, middlewares, migrations, models, routes, views
+from utils.creator.src.build import assets, controllers, env, middlewares, migrations, models, routes, views, command
 class Builder:
 
     @staticmethod
@@ -16,7 +16,7 @@ class Builder:
     
     @staticmethod
     def command(name: str):
-        return ""
+        return command.command(name)
 
 
     @staticmethod

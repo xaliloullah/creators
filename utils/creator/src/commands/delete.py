@@ -69,6 +69,14 @@ class DeleteCommand(Command):
                 Creator.terminal.success(Creator.lang.get("success.delete", resource=f"Middleware '{args.middleware}'"))
             else:
                 Creator.terminal.error(Creator.lang.get("error.delete", resource=f"Middleware '{args.middleware}'")) 
+        elif args.command: 
+            name = str(args.command).replace(" ", "_").lower()
+            filename = f"app/commands/{name}.py"
+            if Creator.file.path_exists(filename):
+                Creator.file.remove(filename) 
+                Creator.terminal.success(Creator.lang.get("success.delete", resource=f"command '{args.command}'"))
+            else:
+                Creator.terminal.error(Creator.lang.get("error.delete", resource=f"command '{args.command}'")) 
 
 
         elif args.view:

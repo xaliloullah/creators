@@ -121,12 +121,13 @@ class MakeCommand(Command):
                 Creator.terminal.error(f"{traceback.format_exc()}") 
 
         elif args.cache: 
-            name = str(args.cache).lower().replace(" ", "_")
-            if name == 'config': 
-                Creator.settings.cache(source = Creator.path.config, destination=Creator.file.set_extension(Creator.path.config,'py'), mode="import") 
-            elif name == 'routes':
-                Creator.settings.cache(source = Creator.path.routes, destination=Creator.file.set_extension(Creator.path.routes,'py'), mode="import") 
-            Creator.terminal.success(Creator.lang.get("success.create", resource=f"Cache '{args.cache}'"))
+            pass
+            # name = str(args.cache).lower().replace(" ", "_")
+            # if name == 'config': 
+            #     Creator.settings.cache(source = Creator.path.config, destination=Creator.file.set_extension(Creator.path.config,'py'), mode="import") 
+            # elif name == 'routes':
+            #     Creator.settings.cache(source = Creator.path.routes, destination=Creator.file.set_extension(Creator.path.routes,'py'), mode="import") 
+            # Creator.terminal.success(Creator.lang.get("success.create", resource=f"Cache '{args.cache}'"))
 
             
         elif args.backup:
