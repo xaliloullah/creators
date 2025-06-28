@@ -26,7 +26,7 @@ except ImportError:
 
 from utils.creator.src.core import Path
 
-class File: 
+class File:
     
     def __init__(self):
         pass

@@ -1,4 +1,34 @@
 # coding python 
-from utils.creator.src.command.command import Command
+
+# from utils.creator.src.command.command import Command
  
-Command.start()
+# Command.start()
+
+from utils.creator.src.commands import Command
+
+# class MakeCommand(Command):
+#     @classmethod
+#     def config(cls, subparsers):
+#         parser = subparsers.add_parser('make', help="Create something")
+#         parser.add_argument('--name', help="Name of the thing to create")
+#         parser.set_defaults(func=cls.handle)
+
+#     @staticmethod
+#     def handle(args):
+#         name = args.name or "default"
+#         print(f"✅ Created: {name}")
+ 
+from utils.creator.src.commands.make import MakeCommand
+from utils.creator.src.commands.delete import DeleteCommand
+from utils.creator.src.commands.install import InstallCommand
+from utils.creator.src.commands.uninstall import UninstallCommand
+from utils.creator.src.commands.migrate import MigrateCommand
+from utils.creator.src.commands.venv import VenvCommand
+from utils.creator.src.commands.lang import LangCommand
+
+Command.add(MakeCommand, DeleteCommand, InstallCommand, UninstallCommand, MigrateCommand, VenvCommand, LangCommand)
+# COMMANDS = [MakeCommand, DeleteCommand, InstallCommand, UninstallCommand, MigrateCommand, VenvCommand, LangCommand]
+
+
+# Command.setup(COMMANDS)
+Command.run()

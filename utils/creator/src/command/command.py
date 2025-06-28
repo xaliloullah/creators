@@ -269,8 +269,6 @@ class Command(argparse.ArgumentParser):
             Creator.terminal.warning(f"Stopping the server...")  
             Server.stop() 
 
-     
-            
 
     @staticmethod
     def install(args):
@@ -413,7 +411,7 @@ class Command(argparse.ArgumentParser):
         delete_parser.add_argument('--middleware', help="Delete a middleware")
         delete_parser.add_argument('--command', help="Delete a command")
         delete_parser.add_argument('--view', help="Delete a view")
-        delete_parser.add_argument('--backup', help="Delete a backup") 
+        delete_parser.add_argument('--backup', help="Delete a backup")
         delete_parser.set_defaults(func=Command.delete)
 
         # 'migrate' command
@@ -466,7 +464,6 @@ class Command(argparse.ArgumentParser):
         publish_parser.add_argument('--package', help="Name of the package to publish")
         publish_parser.add_argument('--lang', help="Name of the lang to publish")
         publish_parser.add_argument('--tag', help="tag of the package to publish") 
-        
         publish_parser.set_defaults(func=Command.publish)
         
         # Sub-command 'venv'
@@ -485,12 +482,11 @@ class Command(argparse.ArgumentParser):
         lang_parser.add_argument("--generate", help="Lister les langues disponibles", type=str)
         lang_parser.set_defaults(func=Command.lang)
 
-        
         parser.add_argument("-v" ,"--version", action='version', version=f'{Creator.version}') 
         parser.add_argument("--author","--creator","--developer", action="store_true") 
         parser.add_argument("--description", "--desc", action="store_true") 
         parser.add_argument("--python","--language", action="store_true") 
-        parser.add_argument("--packages", action="store_true") 
+        parser.add_argument("--packages", action="store_true")
         parser.add_argument("--key", action="store_true")  
         # 'activate' command 
         

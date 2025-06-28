@@ -1,6 +1,6 @@
 from config import database
 from utils.creator.src.core import File, Date, Builder
-from utils.creator.src.command.terminal import Terminal 
+from utils.creator.src.console import Terminal 
 
 
 class Migration:

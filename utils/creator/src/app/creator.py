@@ -1,9 +1,9 @@
-from utils.creator.src.command.terminal import Terminal  
+from utils.creator.src.console import Terminal  
 from utils.creator.src.core import Path, File, Task, Date, View, Lang, Hash, Crypt, Builder, Injector, Storage, Collection, Translator, Http
 #
 # , Interface
  
-from utils.creator.src.app.configs import Settings,Version 
+from utils.creator.src.app.configs import Settings, Version 
 
 from utils.creator.src.requests.sessions import Session
 
@@ -145,7 +145,7 @@ class Creator:
     def update(cls):
         cls.terminal.progress_bar(10, 100) 
         cls.terminal.highlight(cls.build.creator())  
-        cls.settings.update()
+        # cls.settings.update()
 
     @classmethod
     def generate_lang(cls, lang):

@@ -62,7 +62,7 @@ class View:
     @classmethod
     def section(cls, key, value=None):  
         def decorator(function):
-            def wrapper(*args, **kwargs): 
+            def wrapper(*args, **kwargs):
                 if value: 
                     cls.set(key, value)
                     return function(*args, **kwargs)  

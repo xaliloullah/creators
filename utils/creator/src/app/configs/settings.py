@@ -93,7 +93,7 @@ class Settings:
         
     @staticmethod
     def update_requirements(path=Path.requirements):
-        requirements = File.load(path, format="json")  
+        requirements = File.load(path, format="json") 
         for package, version in requirements.items(): 
             Task.install(package,  version=version) 
 

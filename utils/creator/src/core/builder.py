@@ -13,6 +13,10 @@ class Builder:
     @staticmethod
     def controller(name: str, model, resource: bool):
         return controllers.controller(name, model, resource)
+    
+    @staticmethod
+    def command(name: str):
+        return ""
 
 
     @staticmethod
